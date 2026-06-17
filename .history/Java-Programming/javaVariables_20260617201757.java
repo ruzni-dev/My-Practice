@@ -16,7 +16,5 @@ public class javaVariables {
         System.out.println("The sum is " + x + y);   // Prints: The sum is 56
         System.out.println("The sum is " + (x + y)); // Prints: The sum is 11
         System.out.println(x + y + z); // 61
-        int a = 5, b = 6, c = 50;
-        System.out.println(a + b + c); // 61
     }
 }
