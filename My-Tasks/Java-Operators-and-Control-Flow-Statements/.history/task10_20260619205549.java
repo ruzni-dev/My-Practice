@@ -5,7 +5,6 @@ public class task10 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in); // Create a Scanner object for user input
 
-        System.out.println("Simple Calculator");
         System.out.print("Enter first number: ");
         double num1 = input.nextDouble(); // Read the first number from user input
 
