@@ -44,16 +44,5 @@ public class operators {
         System.out.println("x >= y: " + (x >= y)); // returns true, because 5 is greater than or equal to 3
         System.out.println("x <= y: " + (x <= y)); // returns false, because 5 is not less than or equal to 3
 
-        int age = 18;
-        System.out.println("\nAge Comparison:");
-        System.out.println("Age: " + age);
-        System.out.println("Age >= 18: " + (age >= 18)); // true, old enough to vote
-        System.out.println("Age < 18: " + (age < 18));  // false
-
-        int passwordLength = 5;
-        System.out.println("\nPassword Length Check:");
-        System.out.println("Password Length: " + passwordLength);
-        System.out.println("Password >= 8 characters: " + (passwordLength >= 8)); // false, too short
-        System.out.println("Password < 8 characters: " + (passwordLength < 8));  // true, needs more characters
     }
 }

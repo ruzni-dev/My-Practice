@@ -49,11 +49,6 @@ public class operators {
         System.out.println("Age: " + age);
         System.out.println("Age >= 18: " + (age >= 18)); // true, old enough to vote
         System.out.println("Age < 18: " + (age < 18));  // false
-
-        int passwordLength = 5;
-        System.out.println("\nPassword Length Check:");
-        System.out.println("Password Length: " + passwordLength);
-        System.out.println("Password >= 8 characters: " + (passwordLength >= 8)); // false, too short
-        System.out.println("Password < 8 characters: " + (passwordLength < 8));  // true, needs more characters
+        
     }
 }
