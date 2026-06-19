@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class task11 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter a character: ");
+        char ch = input.next().toLowerCase().charAt(0);
+
+        if (!Character.isLetter(ch)) {
+            System.out.println("Invalid input. Please enter a letter.");
+        } else if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+            System.out.println(ch + " is a vowel.");
+        } else {
+            System.out.println(ch + " is a consonant.");
+        }
+
+        input.close();
+    }
+}
