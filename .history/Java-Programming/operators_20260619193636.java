@@ -64,12 +64,5 @@ public class operators {
         System.out.println("Admin user: " + (isLoggedIn && isAdmin)); // false, because the user is logged in but not an admin  
         System.out.println("Has access: " + (isLoggedIn || isAdmin)); // true, because the user is logged in or is an admin
         System.out.println("Not logged in: " + (!isLoggedIn)); // false, because the user is logged in
-
-        //precedence of operators
-        int result = 10 + 5 * 2; // multiplication has higher precedence than addition
-        System.out.println("\nOperator Precedence:");   
-        System.out.println("10 + 5 * 2 = " + result); // prints 20, because 5 * 2 is evaluated first
-        result = (10 + 5) * 2; // parentheses change the order of evaluation
-        System.out.println("(10 + 5) * 2 = " + result); // prints 30, because (10 + 5) is evaluated first
     }
 }
