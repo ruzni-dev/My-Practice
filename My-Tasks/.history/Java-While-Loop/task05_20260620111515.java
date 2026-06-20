@@ -14,8 +14,11 @@ public class task05 {
         // Use a while loop to reverse the digits of the number
         while (number > 0) {
             long digit = number % 10;
+            System.out.println("Extracted digit: " + digit); // Print the extracted digit
             reversedNumber = reversedNumber * 10 + digit;
+            System.out.println("Reversed number so far: " + reversedNumber); // Print the reversed number so far
             number /= 10;
+            System.out.println("Remaining number: " + number); // Print the remaining number after removing the last digit
         }
 
         // If the original number was negative, make the reversed number negative as well

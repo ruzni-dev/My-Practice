@@ -10,6 +10,7 @@ public class task05 {
 
         // Handle negative numbers by working with their absolute value
         long number = Math.abs(inputNumber);
+        System.out.println("Original number: " + number);
         long reversedNumber = 0;
         // Use a while loop to reverse the digits of the number
         while (number > 0) {
