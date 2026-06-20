@@ -1,14 +1,12 @@
-// Create a program to display month names using switch statement.
-import java.util.Scanner; // Import Scanner for reading user input
+import java.util.Scanner;
 
 public class task14 {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in); // Create Scanner object to read input from the console
+        Scanner input = new Scanner(System.in);
 
         System.out.print("Enter a month number (1-12): ");
-        int month = input.nextInt(); // Read an integer from the user representing the month number
+        int month = input.nextInt();
 
-        // Use a switch statement to determine the month name based on the month number
         switch (month) {
             case 1:
                 System.out.println("January");
@@ -51,7 +49,6 @@ public class task14 {
                 break;
         }
 
-        // Close the Scanner to free resources
         input.close();
     }
 }
