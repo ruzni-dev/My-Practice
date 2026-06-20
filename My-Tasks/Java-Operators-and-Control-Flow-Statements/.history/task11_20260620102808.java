@@ -1,5 +1,5 @@
 // Create a program to check whether a character is a vowel or consonant
-import java.util.Scanner;
+import java.util.Scanner; // Import the Scanner class to read user input
 
 public class task11 {
     public static void main(String[] args) {
