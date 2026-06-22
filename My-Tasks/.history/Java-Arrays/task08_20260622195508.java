@@ -4,7 +4,7 @@ public class task08 {
     public static void main(String[] args) {
         int[] numbers = {14, 55, 23, 78, 59, 78, 41}; // Initialize the array with sample values
         int largest = numbers[0]; // Variable to store the largest element, initialized to the first element
-        int secondLargest = Integer.MIN_VALUE; // Variable to store the second largest element, initialized to the first element
+        int secondLargest = 0; // Variable to store the second largest element, initialized to the first element
 
         // Iterate through the array to find the largest and second largest elements
         for (int i = 0; i < numbers.length; i++) {
@@ -24,8 +24,8 @@ public class task08 {
         System.out.println();
 
         // Check if the second largest element was updated and print the result
-        if (secondLargest == Integer.MIN_VALUE) {
-            // If the second largest element is still Integer.MIN_VALUE, it means there was no second largest unique element in the array
+        if (secondLargest == 0) {
+            // If the second largest element is still 0, it means there was no second largest unique element in the array
             System.out.println("The array does not have a second largest unique element.");
         } else {
             // If the second largest element was updated, print its value
