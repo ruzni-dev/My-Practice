@@ -13,7 +13,7 @@ public class ex2 {
         if (k > 1) {
             return k * product(k - 1);
         } else {
-            return 1;
+            return 0;
         }
     }
 
@@ -21,7 +21,7 @@ public class ex2 {
         int result1 = sum(10);
         System.out.println(result1);
 
-        int result2 = product(5);
+        int result2 = product(10);
         System.out.println(result2);
     }
 }

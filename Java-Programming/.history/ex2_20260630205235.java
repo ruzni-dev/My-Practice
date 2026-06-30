@@ -21,7 +21,7 @@ public class ex2 {
         int result1 = sum(10);
         System.out.println(result1);
 
-        int result2 = product(5);
+        int result2 = product(10);
         System.out.println(result2);
     }
 }
