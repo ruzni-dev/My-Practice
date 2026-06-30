@@ -6,5 +6,5 @@ public class DefaultConstructor {
 }
 
 class Demo {
-    int x = 10;
+    int x;
 }
