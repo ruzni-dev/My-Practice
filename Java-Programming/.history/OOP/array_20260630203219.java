@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class array {
-    public static String welcome() {
+    public String welcome(String welString) {
         return "Welcome to java!";
     }
 
@@ -36,8 +36,7 @@ public class array {
     public static void main(String[] args) {
         Scanner sn = new Scanner(System.in);
 
-        String welNote = welcome();
-        System.out.println(welNote);
+        System.out.println(welcome());
         System.out.print("Enter a number: ");
         int N = sn.nextInt();
 

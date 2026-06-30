@@ -1,10 +1,9 @@
 import java.util.Scanner;
 
 public class array {
-    public static String welcome() {
+    public String welcome(String welString) {
         return "Welcome to java!";
     }
-
     public static void display(int N) {
         System.out.print("Print numbers: ");
         for (int i = 1; i <= N; i++) {
@@ -32,12 +31,11 @@ public class array {
             System.out.println();
         }
     }
-
     public static void main(String[] args) {
         Scanner sn = new Scanner(System.in);
 
-        String welNote = welcome();
-        System.out.println(welNote);
+        welcome Welcome = new welcome();
+        System.out.println(Welcome);
         System.out.print("Enter a number: ");
         int N = sn.nextInt();
 

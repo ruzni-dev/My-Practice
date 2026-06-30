@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class array {
-    public static String welcome() {
+    public String welcome() {
         return "Welcome to java!";
     }
 
