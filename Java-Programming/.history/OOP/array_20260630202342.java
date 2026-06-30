@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class array {
     public static void display(int N) {
         System.out.print("Print numbers: ");
-        for (int i = 1; i <= N; i++) {
+        for (int i = 0; i < N; i++) {
             System.out.print(i + " ");
         }
     }
@@ -25,12 +25,11 @@ public class array {
             for (int j = 0; j < arr[0].length; j++) {
                 System.out.print(arr[i][j] + " ");
             }
-            System.out.println();
         }
     }
     public static void main(String[] args) {
         Scanner sn = new Scanner(System.in);
-        System.out.print("Enter a number: ");
+        System.out.println("Enter a number: ");
         int N = sn.nextInt();
 
         display(N);
