@@ -2,8 +2,6 @@
 
 public class MultilevelInheritance {
     public static void main(String[] args) {
-        Animal animal = new Animal(); // Instance of Animal class, can access methods from Animal class only
-        animal.eat(); // Method from Animal class
         Dog dog1 = new Dog(); // Instance of Dog class, can access methods from Dog and Animal classes only
         dog1.eat();  // Method from Animal class
         dog1.bark(); // Method from Dog class
