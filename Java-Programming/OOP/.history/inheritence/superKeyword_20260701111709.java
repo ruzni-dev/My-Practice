@@ -15,8 +15,8 @@ class Animal {
 
 class Dog extends Animal {
     void printColor() {
-        System.out.println(super.color); // Accessing the color attribute from the parent class (Animal) using super
-        System.out.println(color); // Accessing the color attribute from the current class (Dog), but since Dog does not have its own color attribute, it will access the color from the parent class (Animal)
+        System.out.println(super.color);
+        System.out.println(color);
     }
 }
 
@@ -24,7 +24,7 @@ class Cat extends Animal {
     String color = "Black";
 
     void printColor() {
-        System.out.println(super.color);// Accessing the color attribute from the parent class (Animal) using super
-        System.out.println(color);  // Accessing the color attribute from the current class (Cat), which has its own color attribute
+        System.out.println(super.color);
+        System.out.println(color);
     }
 }
