@@ -1,0 +1,4 @@
+Name: Ruzni
+Age: 22
+Marks: 95
+Marks: 95
