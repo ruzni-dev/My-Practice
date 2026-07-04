@@ -2,21 +2,21 @@
 
 class BankAccount {
 
-    private double balance; // current account balance
+    private double balance; // current balance
 
-    // initialize the account with a starting balance
+    // initialize account with given balance
     public BankAccount(double balance) {
         this.balance = balance;
     }
 
-    // deposit amount into the account safely
+    // deposit amount (thread-safe)
     public synchronized void deposit(double amount) {
         balance += amount;
         System.out.println(Thread.currentThread().getName() + " deposited: " + amount);
         System.out.println("Current Balance: " + balance);
     }
 
-    // withdraw amount only if enough balance is present
+    // withdraw amount if available (thread-safe)
     public synchronized void withdraw(double amount) {
         System.out.println(Thread.currentThread().getName() + " trying to withdraw: " + amount);
         if (amount <= balance) {
@@ -29,11 +29,11 @@ class BankAccount {
     }
 }
 
-// thread that performs a deposit operation
+// Thread that performs a deposit
 class DepositThread extends Thread {
 
-    private BankAccount account; // shared bank account
-    private double amount; // deposit amount
+    private BankAccount account; // shared account
+    private double amount; // amount to deposit
 
     public DepositThread(BankAccount account, double amount) {
         this.account = account;
@@ -46,11 +46,11 @@ class DepositThread extends Thread {
     }
 }
 
-// thread that performs a withdrawal operation
+// Thread that performs a withdrawal
 class WithdrawThread extends Thread {
 
-    private BankAccount account; // shared bank account
-    private double amount; // withdrawal amount
+    private BankAccount account; // shared account
+    private double amount; // amount to withdraw
 
     public WithdrawThread(BankAccount account, double amount) {
         this.account = account;
@@ -66,10 +66,8 @@ class WithdrawThread extends Thread {
 public class BankAccountSynchronization {
     public static void main(String[] args) {
 
-        // create one shared bank account for all threads
         BankAccount account = new BankAccount(1000);
 
-        // create deposit and withdrawal threads
         DepositThread deposit1 = new DepositThread(account, 500);
         WithdrawThread withdraw1 = new WithdrawThread(account, 700);
         WithdrawThread withdraw2 = new WithdrawThread(account, 1200);
@@ -78,7 +76,6 @@ public class BankAccountSynchronization {
         withdraw1.setName("Withdraw Thread 1");
         withdraw2.setName("Withdraw Thread 2");
 
-        // start all threads
         deposit1.start();
         withdraw1.start();
         withdraw2.start();
