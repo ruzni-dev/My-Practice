@@ -17,9 +17,9 @@ class BankAccount {
 
     // Constructor
     public BankAccount(String accountNumber, String accountHolderName, double balance) {
-        this.accountNumber = accountNumber; // Initialize the account number
-        this.accountHolderName = accountHolderName; // Initialize the account holder name
-        this.balance = balance; // Initialize the current balance
+        this.accountNumber = accountNumber;
+        this.accountHolderName = accountHolderName;
+        this.balance = balance;
     }
 
     // 3. Withdraw Method
