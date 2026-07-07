@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* All text uses one sans-serif font */
+body {
+    font-family: "Lucida Sans", "Gill Sans", Arial, sans-serif;
+    background-color: #EBEBEB;
+    color: #1E1E1E;
+    padding: 40px;
+}
+
+
+/* Main content area */
+.container {
+    background-color: #FFFFFF;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+
+/* Website title */
+h1 {
+    font-size: 70pt;
+    background-color: #FFCC00;
+    color: #1E1E1E;
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 40px;
+}
+
+
+/* Subheadings */
+h2 {
+    font-size: 38pt;
+    color: #1E1E1E;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+
+/* Paragraph text */
+p {
+    font-size: 18pt;
+    color: #1E1E1E;
+    margin-bottom: 20px;
+}
+
+
+/* List styling */
+ul {
+    margin-left: 30px;
+}
+
+
+li {
+    font-size: 18pt;
+    color: #1E1E1E;
+    margin-bottom: 15px;
+}
+
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 18pt;
+}
